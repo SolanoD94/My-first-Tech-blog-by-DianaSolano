@@ -1,0 +1,27 @@
+[
+    {
+    "blog_title": "Artificial Intelligence in Healthcare",
+    "description": "AI is transforming the healthcare industry, enabling faster and more accurate diagnoses, personalized treatment plans, and improved patient outcomes.",
+    "userId": 1
+  },
+  {
+    "blog_title": "The Future of Blockchain Technology",
+    "description": "Blockchain has the potential to revolutionize industries beyond cryptocurrency, including supply chain management, healthcare, and more.",
+    "userId": 2
+  },  
+  {
+    "blog_title": "The Rise of Remote Work",
+    "description": "The COVID-19 pandemic has accelerated the trend of remote work, with many companies adopting permanent or hybrid work models.",
+    "userId": 3
+  },
+  {
+    "blog_title": "The Benefits and Risks of Autonomous Vehicles",
+    "description": "Self-driving cars have the potential to reduce accidents and traffic congestion, but also raise concerns around safety, privacy, and job loss.",
+    "userId": 4
+  },
+  {
+    "blog_title": "The Impact of 5G Technology",
+    "description": "5G promises faster download and upload speeds, low latency, and the ability to connect more devices, enabling new applications and services such as IoT, AR/VR, and more.",
+    "userId": 1
+  }
+]  
