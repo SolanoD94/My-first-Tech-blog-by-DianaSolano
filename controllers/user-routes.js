@@ -21,6 +21,17 @@ router.get("/:id", async (req, res) => {
   }
 });
 
+// CREATE new post
+router.post("/newPost", async (req, res) => {
+  try {
+    const { blog_title, description } = req.body;
+    if (req.body)
+  } catch (err) {
+    console.log(err);
+    res.status(500).json(err);
+  }
+});
+
 // CREATE new user
 router.post("/", async (req, res) => {
   try {
