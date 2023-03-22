@@ -1,2 +1,30 @@
+        <h3 class="text-center">My Dashboard</h3>
+        <a href="/logout" class="card-link d-flex justify-content-center">Log Out</a>
 
-        {{>userInfo}}
+        <h4 class="text-center mt-4">
+        posts by 
+        <small class="text-muted">{{userPosts.name}}</small>
+        </h4>
+
+           
+<div class="row row-cols-1 row-cols-md-2 g-4 mt-4">
+            {{#each userPosts.blogs}}
+  <div class="col">
+    <div class="card border-primary h-100">
+      <div class="card-body">
+        <div class="d-flex justify-content-left align-items-center">
+                <span class="badge bg-primary rounded-pill mb-2">{{id}}</span>
+                <h5 class="card-title px-3">{{blog_title}}</h5>
+        </div>       
+        <p class="card-text">{{description}}</p>
+        <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Delete
+        </button>
+        <button class="btn btn-outline-secondary mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
+                Update
+        </button>
+      </div>
+    </div>
+  </div>
+         {{/each}}
+</div>

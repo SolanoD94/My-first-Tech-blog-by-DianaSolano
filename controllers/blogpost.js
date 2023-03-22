@@ -1,6 +1,8 @@
 const router = require("express").Router();
 const { Blog, User } = require("../models");
 
+//This route gets the data of each individual post.
+
 router.get("/post/:id", async (req, res) => {
   try {
     const dbPost = await Blog.findByPk(req.params.id, {
