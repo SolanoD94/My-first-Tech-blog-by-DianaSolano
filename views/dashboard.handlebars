@@ -6,7 +6,7 @@
         <small class="text-muted">{{userPosts.name}}</small>
         </h4>
 {{!-- Button to Create New Post --}}
-        <button type="button" class="btn btn-outline-success d-grid gap-2 col-6 mx-auto" data-bs-toggle="modal" data-bs-target="#newBlogPost" data-bs-whatever="Title">Write new post</button>></button>
+        <button type="button" class="btn btn-outline-success d-grid gap-2 col-6 mx-auto" data-bs-toggle="modal" data-bs-target="#newBlogPost" data-bs-whatever="Title" id="newPostBtn">Write new post</button></button>
 
 {{!-- Modal for New Post Input--}}
 <div class="modal fade" id="newBlogPost" tabindex="-1" aria-labelledby="newBlogPost" aria-hidden="true">
@@ -19,18 +19,18 @@
       <div class="modal-body">
         <form>
           <div class="mb-3">
-            <label for="recipient-name" class="col-form-label">Title:</label>
+            <label for="recipient-name" class="col-form-label" id="newPostTitle">Title:</label>
             <input type="text" class="form-control" id="recipient-name">
           </div>
           <div class="mb-3">
-            <label for="message-text" class="col-form-label">Description:</label>
+            <label for="message-text" class="col-form-label" id="newPostDescription">Description:</label>
             <textarea class="form-control" id="message-text"></textarea>
           </div>
         </form>
       </div>
       <div class="modal-footer">
         <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save</button>
+        <button type="button" class="btn btn-primary" id="saveBtn">Save</button>
       </div>
     </div>
   </div>
@@ -38,23 +38,7 @@
 
 {{!-- Saved User Posts --}}
 <div class="row row-cols-1 row-cols-md-2 g-4 mt-2">
-            {{#each userPosts.blogs}}
-  <div class="col">
-    <div class="card border-primary h-100">
-      <div class="card-body">
-        <div class="d-flex justify-content-left align-items-center">
-                <span class="badge bg-primary rounded-pill mb-2">{{id}}</span>
-                <h5 class="card-title px-3">{{blog_title}}</h5>
-        </div>       
-        <p class="card-text">{{description}}</p>
-        <button class="btn btn-outline-danger" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Delete
-        </button>
-        <button class="btn btn-outline-secondary mx-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                Update
-        </button>
-      </div>
-    </div>
-  </div>
-         {{/each}}
+          {{#each userPosts.blogs}}
+          {{> mydashboardposts}}
+          {{/each}}
 </div>

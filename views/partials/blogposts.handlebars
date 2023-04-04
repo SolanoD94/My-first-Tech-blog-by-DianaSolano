@@ -7,11 +7,17 @@
               <figcaption class="blockquote-header text-primary fw-light">Posted By: {{user.name}} </figcaption>
               <figcaption class="blockquote-header text-primary fw-light">Date: {{format_date createdAt}} </figcaption>
               </div>
-
             </div>
             <div class="card-body">
               <p class="card-text">{{description}}</p>
-              <a href="/users/{{user.id}}" class="card-link">See more posts from this author</a>
+            {{!-- View Comments Button --}}
+            <a class="card-link me-3" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">View comments</a>
+            {{!-- Go to User Page Button --}}
+            <a href="/user-posts/{{user.id}}" class="card-link">See more posts from this author</a>
+                {{!-- Box of comments --}}
+                <div class="collapse my-2" id="collapseExample">
+                      <p class="form-control" id="exampleFormControlTextarea1" rows="3" >{{comments.comment_text}}</textarea>
+                </div>
             </div>
           </div>
 

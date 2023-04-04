@@ -2,32 +2,9 @@
         <h4 class="text-center">
         Posts by 
         <small class="text-muted">{{userPosts.name}}</small>
-        </h4>
-
-           
-            {{#each userPosts.blogs}}
-         <section placeholder="blogposts" class="my-4">
-          <div class="card mx-5">
-            <div class="card-header d-flex justify-content-between pb-0 bg-dark-subtle">
-              <h5>{{blog_title}}</h5>
-              <div class="justify-content-between pb-2">
-              <figcaption class="blockquote-header text-primary fw-light">Posted: {{format_date createdAt}} </figcaption>
-              </div>
-
-            </div>
-            <div class="card-body">
-              <p class="card-text">{{description}}</p>
-                <p>
-                <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#collapseExample" aria-expanded="false" aria-controls="collapseExample">
-                    Add a Comment
-                </button>
-                </p>
-                    <div class="collapse" id="collapseExample">
-                      <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Write a comment that contributes to the community."></textarea>
-
-                    </div>
-            </div>
-          </div>
-
-         </section>
-         {{/each}}
+        </h4> 
+    <section placeholder="blogposts" class="my-4 row">
+          {{#each userPosts.blogs}}
+        {{> authorposts}}
+          {{/each}}
+    </section>

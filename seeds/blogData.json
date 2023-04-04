@@ -1,5 +1,5 @@
 [
-    {
+  {
     "blog_title": "Artificial Intelligence in Healthcare",
     "description": "AI is transforming the healthcare industry, enabling faster and more accurate diagnoses, personalized treatment plans, and improved patient outcomes.",
     "user_id": 1
@@ -8,7 +8,7 @@
     "blog_title": "The Future of Blockchain Technology",
     "description": "Blockchain has the potential to revolutionize industries beyond cryptocurrency, including supply chain management, healthcare, and more.",
     "user_id": 2
-  },  
+  },
   {
     "blog_title": "The Rise of Remote Work",
     "description": "The COVID-19 pandemic has accelerated the trend of remote work, with many companies adopting permanent or hybrid work models.",

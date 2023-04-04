@@ -1,5 +1,6 @@
 const User = require("./User");
 const Blog = require("./Blog");
+const Comments = require("./Comments");
 const sequelize = require("../config/connections");
 
 User.hasMany(Blog, {
@@ -11,4 +12,13 @@ Blog.belongsTo(User, {
   foreignKey: "user_id",
 });
 
-module.exports = { User, Blog };
+Blog.hasMany(Comments, {
+  foreignKey: "blog_id",
+  onDelete: "CASCADE",
+});
+
+Comments.belongsTo(Blog, {
+  foreignKey: "blog_id",
+});
+
+module.exports = { User, Blog, Comments };
