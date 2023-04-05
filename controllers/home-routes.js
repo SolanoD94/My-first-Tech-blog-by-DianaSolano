@@ -12,7 +12,6 @@ router.get("/", async (req, res) => {
       order: [["createdAt", "DESC"]],
     });
     const blogPosts = blogData.map((blog) => blog.get({ plain: true }));
-    console.log(blogPosts);
     res.render("homepage", { blogPosts });
   } catch (err) {
     res.status(500).json(err);
@@ -35,7 +34,6 @@ router.get("/signin", async (req, res) => {
   try {
     const newUserData = await User.findAll({});
     const newUser = newUserData.map((user) => user.get({ plain: true }));
-    console.log(newUser);
     res.render("signin", {
       newUser,
       countVisit: req.session.countVisit,
