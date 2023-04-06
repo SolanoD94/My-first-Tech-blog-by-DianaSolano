@@ -12,6 +12,9 @@ router.get("/", async (req, res) => {
       order: [["createdAt", "DESC"]],
     });
     const blogPosts = blogData.map((blog) => blog.get({ plain: true }));
+
+    console.log("COMMENTS", blogPosts);
+
     res.render("homepage", { blogPosts });
   } catch (err) {
     res.status(500).json(err);
@@ -21,9 +24,8 @@ router.get("/", async (req, res) => {
 // ROUTE TO LOGIN
 // IF LOGGED IN RENDER HOME
 router.get("/login", (req, res) => {
-  if (req.session.logged_in) {
-    res.redirect("/");
-    return;
+  if (req.session.loggedIn) {
+    return res.redirect("/");
   }
 
   res.render("login");

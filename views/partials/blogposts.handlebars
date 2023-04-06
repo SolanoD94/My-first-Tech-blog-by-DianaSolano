@@ -16,7 +16,10 @@
             <a href="/user-posts/{{user.id}}" class="card-link">See more posts from this author</a>
                 {{!-- Box of comments --}}
                 <div class="collapse my-2" id="collapseExample">
-                      <p class="form-control" id="exampleFormControlTextarea1" rows="3" >{{comments.comment_text}}</textarea>
+                        {{#each comments as |comment|}}
+                      <p class="form-control" id="exampleFormControlTextarea1" rows="3" >{{comment_text}}</p>
+                        {{/each}}
+                        
                 </div>
             </div>
           </div>

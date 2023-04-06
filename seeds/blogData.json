@@ -1,32 +1,24 @@
 [
     {
         "blog_title": "Artificial Intelligence in Healthcare",
-        "description": "AI is transforming the healthcare industry, enabling faster and more accurate diagnoses, personalized treatment plans, and improved patient outcomes.",
-        "user_id": 1
+        "description": "AI is transforming the healthcare industry, enabling faster and more accurate diagnoses, personalized treatment plans, and improved patient outcomes."
+       
     },
     {
         "blog_title": "The Future of Blockchain Technology",
-        "description": "Blockchain has the potential to revolutionize industries beyond cryptocurrency, including supply chain management, healthcare, and more.",
-        "user_id": 2
-    },
-    {
-        "blog_title": "The Rise of Remote Work",
-        "description": "The COVID-19 pandemic has accelerated the trend of remote work, with many companies adopting permanent or hybrid work models.",
-        "user_id": 3
+        "description": "Blockchain has the potential to revolutionize industries beyond cryptocurrency, including supply chain management, healthcare, and more."
+       
     },
     {
         "blog_title": "The Benefits and Risks of Autonomous Vehicles",
-        "description": "Self-driving cars have the potential to reduce accidents and traffic congestion, but also raise concerns around safety, privacy, and job loss.",
-        "user_id": 4
+        "description": "Self-driving cars have the potential to reduce accidents and traffic congestion, but also raise concerns around safety, privacy, and job loss."
     },
     {
         "blog_title": "The Impact of 5G Technology",
-        "description": "5G promises faster download and upload speeds, low latency, and the ability to connect more devices, enabling new applications and services such as IoT, AR/VR, and more.",
-        "user_id": 1
+        "description": "5G promises faster download and upload speeds, low latency, and the ability to connect more devices, enabling new applications and services such as IoT, AR/VR, and more."
     },
     {
         "blog_title": "Harnessing the Power of Artificial Intelligence for Precision Medicine",
-        "description": "Precision medicine is an emerging field that aims to revolutionize healthcare by leveraging the power of artificial intelligence. In this blog post, we delve into the various ways AI is being used in precision medicine, from analyzing large datasets for personalized treatment plans to predicting disease outcomes. Learn how AI is changing the landscape of healthcare and paving the way for more targeted and effective treatments.",
-        "user_id": 6
+        "description": "Precision medicine is an emerging field that aims to revolutionize healthcare by leveraging the power of artificial intelligence. In this blog post, we delve into the various ways AI is being used in precision medicine, from analyzing large datasets for personalized treatment plans to predicting disease outcomes. Learn how AI is changing the landscape of healthcare and paving the way for more targeted and effective treatments."
     }
 ]
