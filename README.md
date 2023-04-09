@@ -7,7 +7,7 @@
 - [Installation](#Installation)
 - [Contribution](#Contribution)
 - [License](#License)
-- [Deployment Link](#Deployment-Link)
+- [Deployment Link and Snapshots](#Deployment-Link-and-Schnapshots)
 - [Questions](#Questions)
 
 ## Description
@@ -27,8 +27,14 @@ Add a Search by Topic functionallity, add images to posts and user profile.
 ## License
 MIT
 
-## Deployment Link
+## Deployment Link and Snapshots
 https://whispering-fortress-36561.herokuapp.com/
+
+
+![Tech-blog-homepage](https://user-images.githubusercontent.com/117420563/230756644-d39d7183-6d67-4c6d-8b92-ceb71af21c3e.png)
+![Tech-blog-newuser](https://user-images.githubusercontent.com/117420563/230756776-5944b214-0159-43a2-85fc-dd60a7c2b946.png)
+![Tech-blog-newpost](https://user-images.githubusercontent.com/117420563/230756778-2460e38f-1e8e-4765-a7a9-f6bee8403401.png)
+
 
 ## Questions
 Github: <https://github.com/SolanoD94> 
