@@ -15,7 +15,7 @@ router.get("/", async (req, res) => {
 
     console.log("COMMENTS", blogPosts);
 
-    res.render("homepage", { blogPosts });
+    res.render("homepage", { blogPosts, loggedIn: req.session.loggedIn });
   } catch (err) {
     res.status(500).json(err);
   }
@@ -39,6 +39,7 @@ router.get("/signin", async (req, res) => {
     res.render("signin", {
       newUser,
       countVisit: req.session.countVisit,
+      loggedIn: req.session.loggedIn,
     });
   } catch (err) {
     res.status(500).json(err);
