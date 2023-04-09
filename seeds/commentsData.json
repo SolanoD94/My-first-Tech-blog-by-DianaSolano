@@ -1,0 +1,50 @@
+[
+    {
+      "comment_text": "Great article! I never realized AI could have such a big impact on healthcare.",
+      "commenter_name": "John",
+      "comment_date": "2022-02-01",
+      "blog_id": 1
+    },
+    {
+      "comment_text": "I have some concerns about the use of AI in healthcare, particularly around privacy and data security. What measures are being taken to address these issues?",
+      "commenter_name": "Sarah",
+      "comment_date": "2022-02-02",
+      "blog_id": 5
+    },
+    {
+      "comment_text": "As a healthcare professional, I'm excited to see how AI can be used to improve patient outcomes and streamline processes.",
+      "commenter_name": "Jane",
+      "comment_date": "2022-03-10",
+      "blog_id": 1
+    },
+    {
+      "comment_text": "I'm excited to see how blockchain can be used in healthcare to improve data sharing and patient outcomes.",
+      "commenter_name": "Jane",
+      "comment_date": "2022-02-03",
+      "blog_id": 2
+    },
+    {
+      "comment_text": "I'm still not convinced that blockchain is the best solution for some of these use cases. What are the alternatives?",
+      "commenter_name": "Tom",
+      "comment_date": "2022-02-05",
+      "blog_id": 2
+    },
+    {
+      "comment_text": "As a supply chain manager, I see huge potential for blockchain to improve transparency and reduce fraud.",
+      "commenter_name": "Mark",
+      "comment_date": "2022-03-01",
+      "blog_id": 3
+    },
+    {
+      "comment_text": "I miss the social aspect of working in an office, but overall I think remote work is the way of the future.",
+      "commenter_name": "Mike",
+      "comment_date": "2022-02-12",
+      "blog_id": 6
+    },
+    {
+      "comment_text": "As a manager, I've found that remote work has actually increased productivity for my team.",
+      "commenter_name": "Amy",
+      "comment_date": "2022-03-15",
+      "blog_id": 4
+    }
+  ]

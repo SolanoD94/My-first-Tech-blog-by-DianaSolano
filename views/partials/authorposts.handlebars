@@ -1,0 +1,68 @@
+
+  <div class="col">
+    <div class="card mx-2">
+        <div class="card-header d-flex justify-content-between pb-0 bg-dark-subtle">
+          <h5>{{blog_title}}</h5>
+          <div class="justify-content-between pb-2">
+          <figcaption class="blockquote-header text-primary fw-light">Posted: {{format_date createdAt}} </figcaption>
+          </div>
+        </div>
+        <div class="card-body">
+          <p class="card-text">{{description}}</p>
+
+          {{!-- Buttons Section --}}
+          <div class="container">
+            <div class="row justify-content-between">
+
+                {{!-- View Comments Button --}}
+                <div placeholder="buttonViewComment" class="col d-flex justify-content-left align-self-center">
+                    <a class="card-link me-3 " type="button" data-bs-toggle="collapse" data-bs-target="#collapseView" aria-expanded="false" aria-controls="collapseView">View comments</a>
+                </div>
+
+                {{!-- Add Comment Button in same row --}}
+                <div placeholder="buttonAddComment" class="col d-flex justify-content-left align-self-center">
+                  <!-- Button trigger modal -->
+                  <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                    Add Comment</button>
+
+                  <!-- Add Comment Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h1 class="modal-title fs-5" id="exampleModalLabel">Add new comment</h1>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <form>
+          <div class="mb-3">
+            <label for="recipient-name" class="col-form-label">Your Name:</label>
+            <input type="text" class="form-control" id="recipient-name">
+          </div>
+          <div class="mb-3">
+            <label for="message-text" class="col-form-label">Comment:</label>
+            <textarea class="form-control" id="message-text" placeholder="Add a comment that contributes to the community"></textarea>
+          </div>
+        </form>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+        <button id="postCommentBtn" type="button" class="btn btn-primary">Post</button>
+      </div>
+    </div>
+  </div>
+</div>
+                </div>
+                {{!-- Comments Text --}}
+                    <div class="collapse my-2" id="collapseView">
+                      {{#each comments as |comment|}}
+                      <p class="form-control" id="exampleFormControlTextarea1" rows="3" >{{comment_text}}</p>
+                        {{/each}}
+                    </div>
+
+            </div>
+          </div>
+      </div>
+    </div>
+  </div>
+ 
